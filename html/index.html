@@ -1,0 +1,1677 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>
+        Ant Logistic
+
+
+
+    </title>
+    <!-- ================= Page description ================== -->
+
+    <meta name="description" content="">
+
+    <!-- ================= Meta ================== -->
+    <meta name="keywords" content="Ant Logistic, ant-logistic.mysapo.net" />
+    <link rel="canonical" href="https://ant-logistic.mysapo.net/" />
+    <meta name='revisit-after' content='1 days' />
+    <meta name="robots" content="noodp,index,follow" />
+    <!-- ================= Favicon ================== -->
+
+    <link rel="icon" href="assets/images/logo.png" type="image/x-icon" />
+
+    <!-- Facebook Open Graph meta tags -->
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ant Logistic">
+    <meta property="og:image"
+        content="http://bizweb.dktcdn.net/100/296/451/themes/638268/assets/logo.png?1705894744374">
+    <meta property="og:image:secure_url"
+        content="https://bizweb.dktcdn.net/100/296/451/themes/638268/assets/logo.png?1705894744374">
+
+    <meta property="og:description" content="">
+    <meta property="og:url" content="https://ant-logistic.mysapo.net/">
+    <meta property="og:site_name" content="Ant Logistic">
+    <link rel="preload" as="style" type="text/css" href="assets/css/base.scss.css" onload="this.rel='stylesheet'" />
+    <link href="assets/css/base.scss.css" rel="stylesheet" type="text/css" media="all" />
+
+    <link rel="preload" as="style" type="text/css" href="assets/css/ant-logistic.scss.css"
+        onload="this.rel='stylesheet'" />
+    <link href="assets/css/ant-logistic.scss.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="preload" as="script" href="assets/js/jquery-2.2.3.min.js" />
+    <script src="assets/js/jquery-2.2.3.min.js" type="text/javascript"></script>
+
+
+    <script>
+        var Bizweb = Bizweb || {};
+        Bizweb.store = 'ant-logistic.mysapo.net';
+        Bizweb.id = 296451;
+        Bizweb.theme = {
+            "id": 638268,
+            "name": "Ant Logistic",
+            "role": "main"
+        };
+        Bizweb.template = 'index';
+        if (!Bizweb.fbEventId) Bizweb.fbEventId = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+            var r = Math.random() * 16 | 0,
+                v = c == 'x' ? r : (r & 0x3 | 0x8);
+            return v.toString(16);
+        });
+    </script>
+    <script>
+        (function () {
+            function asyncLoad() {
+                var urls = [];
+                for (var i = 0; i < urls.length; i++) {
+                    var s = document.createElement('script');
+                    s.type = 'text/javascript';
+                    s.async = true;
+                    s.src = urls[i];
+                    var x = document.getElementsByTagName('script')[0];
+                    x.parentNode.insertBefore(s, x);
+                }
+            };
+            window.attachEvent ? window.attachEvent('onload', asyncLoad) : window.addEventListener('load', asyncLoad, false);
+        })();
+    </script>
+
+
+    <script>
+        window.BizwebAnalytics = window.BizwebAnalytics || {};
+        window.BizwebAnalytics.meta = window.BizwebAnalytics.meta || {};
+        window.BizwebAnalytics.meta.currency = 'VND';
+        window.BizwebAnalytics.tracking_url = '/s';
+
+        var meta = {};
+
+
+        for (var attr in meta) {
+            window.BizwebAnalytics.meta[attr] = meta[attr];
+        }
+    </script>
+
+
+    <script src="assets/js/stats.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+    <!-- Main content -->
+    <header class="header">
+        <div class="container">
+            <div class="header-main">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-full-function">
+                        <a class="link-toggle-slide-menu hidden-lg hidden-md"></a>
+                        <div class="logo">
+                            <a href="/" class="logo-wrapper ">
+                                <img src="assets/images/logo.png" alt="logo Ant Logistic">
+                            </a>
+                        </div>
+                        <a href="tel:19006750" class="icon-option-cart hidden-lg hidden-md"></a>
+                    </div>
+                    <div class="col-lg-5 col-md-4">
+                        <div class="search">
+                            <div class="header_search search_form">
+                                <form class="input-group search-bar search_form" action="/search" method="get"
+                                    role="search">
+                                    <input type="search" name="query" value="" placeholder="Tìm kiếm... "
+                                        class="input-group-field st-default-search-input search-text"
+                                        autocomplete="off">
+                                    <input type="hidden" class="form-control" name="type" value="article" />
+                                    <span class="input-group-btn">
+                                        <button class="btn icon-fallback-text">
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                                    </span>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5 hidden-sm hidden-xs">
+                        <div class="top-fun">
+                            <div class="hotline">
+                                <img src="assets/images/hotline.svg" alt="Tổng đài miễn phí" />
+                                <div class="hotline-text">
+
+                                    <a href="tel:19006750">1900 6750</a>
+
+                                    <span>Tổng đài miễn phí</span>
+                                </div>
+                            </div>
+                            <div class="hotline">
+                                <img src="assets/images/email.svg" alt="Gửi Email liên hệ" />
+                                <div class="hotline-text">
+
+                                    <a href="mailto:support@sapo.vn">support@sapo.vn</a>
+
+                                    <span>Gửi Email liên hệ</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <ul id="nav" class="nav container">
+
+
+
+
+
+
+                <li class="nav-item active"><a class="nav-link" href="/">Trang chủ</a></li>
+
+
+
+
+
+
+
+                <li class="nav-item "><a class="nav-link" href="/gioi-thieu">Giới thiệu</a></li>
+
+
+
+
+
+
+
+                <li class="nav-item ">
+                    <a href="/dich-vu" class="nav-link">Dịch vụ <i class="fa fa-angle-right"
+                            data-toggle="dropdown"></i></a>
+
+                    <ul class="dropdown-menu">
+
+
+                        <li class="dropdown-submenu nav-item-lv2">
+                            <a class="nav-link" href="/mua-hang-amazon">Mua hàng trên Amazon <i
+                                    class="fa fa-angle-right"></i></a>
+
+                            <ul class="dropdown-menu">
+
+                                <li class="nav-item-lv3">
+                                    <a class="nav-link" href="/dich-vu">Dịch vụ</a>
+                                </li>
+
+                                <li class="nav-item-lv3">
+                                    <a class="nav-link" href="/tien-ich">Tiện ích</a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+
+
+                        <li class="dropdown-submenu nav-item-lv2">
+                            <a class="nav-link" href="/mua-hang-ebay">Mua hàng trên eBay <i
+                                    class="fa fa-angle-right"></i></a>
+
+                            <ul class="dropdown-menu">
+
+                                <li class="nav-item-lv3">
+                                    <a class="nav-link" href="/dich-vu">Dịch vụ</a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+
+
+                    </ul>
+
+                </li>
+
+
+
+
+
+
+
+                <li class="nav-item "><a class="nav-link" href="/tin-tuc">Tin tức</a></li>
+
+
+
+
+
+
+
+                <li class="nav-item "><a class="nav-link" href="/lien-he">Liên hệ</a></li>
+
+
+            </ul>
+        </nav>
+    </header>
+    <h1 class="hidden">Ant Logistic - </h1>
+
+
+
+    <section class="awe-section-1">
+
+        <div class="home-slider owl-carousel" data-md-items='1' data-sm-items='1' data-xs-items="1" data-margin='0'>
+
+
+
+
+
+
+
+            <div class="item">
+                <a href="#" class="clearfix">
+                    <div class="full_slider"
+                        style="background-image: url(//bizweb.dktcdn.net/100/296/451/themes/638268/assets/slider_1.jpg?1705894744374);">
+                    </div>
+                </a>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <!-- /.products -->
+
+    </section>
+
+
+
+
+    <section class="awe-section-2">
+        <div class="section_service">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 service-bg">
+                        <div class="row">
+
+
+
+
+
+                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                <div class="item">
+                                    <div class="slz-icon-box-2 theme-style-3 ">
+                                        <div class="icon-cell ">
+                                            <div class="wrapper-icon-image">
+                                                <img src="//bizweb.dktcdn.net/100/296/451/themes/638268/assets/service_icon_1.png?1705894744374"
+                                                    class="slz-icon-img" alt="Mua hàng Amazon">
+                                            </div>
+                                        </div>
+                                        <div class="service-content-wrap">
+                                            <div class="content-cell">
+                                                <a class="title" href="/mua-hang-amazon">Mua hàng Amazon</a>
+                                                <div class="wrapper-info">
+                                                    <div class="description">Chúng tôi luôn cố gắng loại bỏ những khâu
+                                                        trung gian để mang đến sản phẩm có chi phí hợp lý nhất</div>
+                                                    <a href="/mua-hang-amazon" class="slz-btn">
+                                                        <span class="text">Chi tiết</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                <div class="item">
+                                    <div class="slz-icon-box-2 theme-style-3 ">
+                                        <div class="icon-cell ">
+                                            <div class="wrapper-icon-image">
+                                                <img src="//bizweb.dktcdn.net/100/296/451/themes/638268/assets/service_icon_2.png?1705894744374"
+                                                    class="slz-icon-img" alt="Mua hàng Ebay">
+                                            </div>
+                                        </div>
+                                        <div class="service-content-wrap">
+                                            <div class="content-cell">
+                                                <a class="title" href="/mua-hang-ebay">Mua hàng Ebay</a>
+                                                <div class="wrapper-info">
+                                                    <div class="description">Chúng tôi luôn cố gắng loại bỏ những khâu
+                                                        trung gian để mang đến sản phẩm có chi phí hợp lý nhất</div>
+                                                    <a href="/mua-hang-ebay" class="slz-btn">
+                                                        <span class="text">Chi tiết</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                <div class="item">
+                                    <div class="slz-icon-box-2 theme-style-3 ">
+                                        <div class="icon-cell ">
+                                            <div class="wrapper-icon-image">
+                                                <img src="//bizweb.dktcdn.net/100/296/451/themes/638268/assets/service_icon_3.png?1705894744374"
+                                                    class="slz-icon-img" alt="Mua hộ hàng Mỹ">
+                                            </div>
+                                        </div>
+                                        <div class="service-content-wrap">
+                                            <div class="content-cell">
+                                                <a class="title" href="/mua-ho-hang-my">Mua hộ hàng Mỹ</a>
+                                                <div class="wrapper-info">
+                                                    <div class="description">Chúng tôi luôn cố gắng loại bỏ những khâu
+                                                        trung gian để mang đến sản phẩm có chi phí hợp lý nhất</div>
+                                                    <a href="/mua-ho-hang-my" class="slz-btn">
+                                                        <span class="text">Chi tiết</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                <div class="item">
+                                    <div class="slz-icon-box-2 theme-style-3 ">
+                                        <div class="icon-cell ">
+                                            <div class="wrapper-icon-image">
+                                                <img src="//bizweb.dktcdn.net/100/296/451/themes/638268/assets/service_icon_4.png?1705894744374"
+                                                    class="slz-icon-img" alt="Ship hàng Mỹ">
+                                            </div>
+                                        </div>
+                                        <div class="service-content-wrap">
+                                            <div class="content-cell">
+                                                <a class="title" href="/ship-hang-my">Ship hàng Mỹ</a>
+                                                <div class="wrapper-info">
+                                                    <div class="description">Chúng tôi luôn cố gắng loại bỏ những khâu
+                                                        trung gian để mang đến sản phẩm có chi phí hợp lý nhất</div>
+                                                    <a href="/ship-hang-my" class="slz-btn">
+                                                        <span class="text">Chi tiết</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="awe-section-3">
+        <div class="section_about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="service-title text-center">
+                            <h2>Về chúng tôi</h2>
+                            <div class="service-subtitle">
+                                Chào mừng quý khách đến với Ant Logistic
+                            </div>
+                        </div>
+                        <div class="service-tab">
+                            <div class="tab-list-wrapper">
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li role="presentation" class="active">
+                                        <a href="#home" aria-controls="home" role="tab" data-toggle="tab">Mua hàng
+                                            Mỹ</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Tư vấn
+                                            chuyên nghiệp</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Giao
+                                            hàng tận nơi</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="home">
+                                    <div class="row">
+                                        <div class="col-md-6 col-md-push-6">
+                                            <img src="//bizweb.dktcdn.net/100/296/451/themes/638268/assets/about_image_1.jpg?1705894744374"
+                                                class="img-responsive center-block" alt="Mua hàng Mỹ" />
+                                        </div>
+                                        <div class="col-md-6 col-md-pull-6">
+                                            <p>Với kinh nghiệm nhiều năm trong lĩnh vực vận chuyển hàng hóa, Ant
+                                                Logistic được nhiều khách hàng lựa chọn để mua hộ hàng trên Amazon, Ebay
+                                                cũng như hầu hết website bán hàng tại Mỹ. Chúng tôi mong muốn kết nối
+                                                seller tại Mỹ và người bán hàng tại Việt Nam, giúp bạn giải quyết những
+                                                khó khăn khi mua hàng trên website Mỹ, thanh toán trực tuyến cũng như
+                                                thủ tục vận chuyển hàng từ Mỹ về Việt Nam. Khi sử dụng dịch vụ
+                                                của Ant Logistic, bạn sẽ nhận được những ưu đãi:</p>
+                                            <ul>
+                                                <li>Thời gian vận chuyển trong vòng 10-15 ngày.</li>
+                                                <li>Quy trình vận chuyển nghiêm ngặt giúp hạn chế tối đa tình trạng hư
+                                                    hỏng, thất lạc hàng hóa.</li>
+                                                <li>Miễn phí công mua hàng trên Amazon và Ebay.</li>
+                                                <li>Chính sách chiết khấu, giảm giá cho Quý hàng có nhu cầu nhập hàng
+                                                    thường xuyên.</li>
+                                                <li>Thanh toán bằng nhiều hình thức: Chuyển khoản, đặt cọc tại văn phòng
+                                                    hoặc tại nhà.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="profile">
+                                    <div class="row">
+                                        <div class="col-md-6 col-md-push-6">
+                                            <img src="//bizweb.dktcdn.net/100/296/451/themes/638268/assets/about_image_2.jpg?1705894744374"
+                                                class="img-responsive center-block" alt="Tư vấn chuyên nghiệp" />
+                                        </div>
+                                        <div class="col-md-6 col-md-pull-6">
+                                            <p>Nhân viên tư vấn chuyên nghiệp về chất lượng sản phẩm, mức độ uy tín
+                                                seller, phương thức thanh toán,…</p>
+                                            <p>Khi sử dụng dịch vụ tại Ant Logistic, quý khách sẽ được Ant Logistic hỗ
+                                                trợ chu đáo với các dịch vụ tiện ích sau:</p>
+                                            <ul>
+                                                <li>Dịch vụ chăm sóc khách hàng tận tình trước - trong - sau khi mua
+                                                    hàng, xuyên suốt 7 ngày/tuần, từ 8:00 đến 21:00</li>
+                                                <li>Giao hàng miễn phí (đối với đơn hàng từ 150.000đ trong phạm vi
+                                                    TP.HCM và từ 250.000đ đối với đơn hàng giao đến các tỉnh thành khác
+                                                    thuộc Việt Nam)</li>
+                                                <li>Tích lũy điểm thưởng Ant Logistic xu nhận cơ hội mua hàng với giá 0đ
+                                                    Thời hạn đổi - trả sản phẩm lên đến 30 ngày để khách hàng hoàn toàn
+                                                    an tâm khi mua sắm tại Ant Logistic</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="messages">
+                                    <div class="row">
+                                        <div class="col-md-6 col-md-push-6">
+                                            <img src="//bizweb.dktcdn.net/100/296/451/themes/638268/assets/about_image_3.jpg?1705894744374"
+                                                class="img-responsive center-block" alt="Giao hàng tận nơi" />
+                                        </div>
+                                        <div class="col-md-6 col-md-pull-6">
+                                            <p>Chúng tôi cung cấp các dịch vụ giao hàng tận nhà trong ngày. Giúp bạn
+                                                tiết kiệm thời gian hơn</p>
+                                            <p>Ant Logistic thực hiện cách thức giao hàng linh động, cho phép khách hàng
+                                                lựa chọn nhận hàng tại kho, tại nhà hoặc qua đường bưu điện. Với cách
+                                                thức giao hàng tiện lợi này, các hàng hóa chất lượng đến từ Mỹ
+                                                sẽ không còn xa lạ đối với người tiêu dùng Việt.</p>
+                                            <p>Khi đơn hàng của khách hàng về đến trụ sở của Ant Logistic tại
+                                                Việt Nam, khách hàng sẽ nhận được Email thông báo hàng về, Ant
+                                                Logistic sẽ chủ động tiến hành luân chuyển và thay đổi theo
+                                                địa chỉ đăng ký nhận hàng trên đơn hàng.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="awe-section-4">
+        <div class="section_why_choose">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="service-title text-center">
+                            <h2>Vì sao chọn chúng tôi</h2>
+                            <div class="service-subtitle">
+                                Dịch vụ ship hàng chuyên nghiệp hàng đầu
+                            </div>
+                        </div>
+                        <div class="section_why_choose_content">
+                            <div class="row">
+
+
+
+
+
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                    <div class="why_choose_item">
+                                        <a href="/bao-hiem-hang-hoa">
+                                            <img src="//bizweb.dktcdn.net/100/296/451/themes/638268/assets/sec_service_image_1.svg?1705894744374"
+                                                alt="Bảo hiểm hàng hóa" class="bottom20" />
+                                            <div class="choose-right">
+                                                <h4 class="bottom10">Bảo hiểm hàng hóa</h4>
+                                                <p>Mức phí bảo hiểm là 5% giá trị lô hàng. Giúp bạn yên tâm, tiết kiệm
+                                                    hơn khi gởi hàng tại Ant Logistic</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+
+
+
+
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                    <div class="why_choose_item">
+                                        <a href="/bao-hiem-hang-hoa">
+                                            <img src="//bizweb.dktcdn.net/100/296/451/themes/638268/assets/sec_service_image_2.svg?1705894744374"
+                                                alt="Bồi thường 100%" class="bottom20" />
+                                            <div class="choose-right">
+                                                <h4 class="bottom10">Bồi thường 100%</h4>
+                                                <p>Khi đặt cọc, nếu hàng hóa không đến tay bạn. Chúng tôi hoàn trả 100%
+                                                    tiền cọc & món quà thay lời xin lỗi</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+
+
+
+
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                    <div class="why_choose_item">
+                                        <a href="/bao-hiem-hang-hoa">
+                                            <img src="//bizweb.dktcdn.net/100/296/451/themes/638268/assets/sec_service_image_3.svg?1705894744374"
+                                                alt="Giá cước tiết kiệm" class="bottom20" />
+                                            <div class="choose-right">
+                                                <h4 class="bottom10">Giá cước tiết kiệm</h4>
+                                                <p>Ant Logistic luôn cố gắng loại bỏ những khâu trung gian để mang đến
+                                                    sản phẩm có chi phí hợp lý nhất</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+
+
+
+
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                    <div class="why_choose_item">
+                                        <a href="/bao-hiem-hang-hoa">
+                                            <img src="//bizweb.dktcdn.net/100/296/451/themes/638268/assets/sec_service_image_4.svg?1705894744374"
+                                                alt="Báo giá nhanh chóng" class="bottom20" />
+                                            <div class="choose-right">
+                                                <h4 class="bottom10">Báo giá nhanh chóng</h4>
+                                                <p>Những yêu cầu báo giá, đặt hàng được phản hồi nhanh chóng giúp quý
+                                                    khách mua được hàng hóa ưng ý nhất</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+
+
+
+
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                    <div class="why_choose_item">
+                                        <a href="/bao-hiem-hang-hoa">
+                                            <img src="//bizweb.dktcdn.net/100/296/451/themes/638268/assets/sec_service_image_5.svg?1705894744374"
+                                                alt="Giao hàng tận nơi" class="bottom20" />
+                                            <div class="choose-right">
+                                                <h4 class="bottom10">Giao hàng tận nơi</h4>
+                                                <p>Chúng tôi cung cấp các dịch vụ giao hàng tận nhà trong ngày. Giúp bạn
+                                                    tiết kiệm thời gian hơn</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+
+
+
+
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                    <div class="why_choose_item">
+                                        <a href="/bao-hiem-hang-hoa">
+                                            <img src="//bizweb.dktcdn.net/100/296/451/themes/638268/assets/sec_service_image_6.svg?1705894744374"
+                                                alt="Theo dõi xuyên suốt" class="bottom20" />
+                                            <div class="choose-right">
+                                                <h4 class="bottom10">Theo dõi xuyên suốt</h4>
+                                                <p>Bạn luôn chủ động cập nhật toàn bộ thông tin, lịch sử, của đơn hàng
+                                                    từ lúc đặt cọc đến khi bạn nhận hàng</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="awe-section-5">
+        <div class="section_price">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="service-title text-center">
+                            <h2>Báo giá</h2>
+                            <div class="service-subtitle">
+                                Chúng tôi báo giá trong vòng 30 phút!
+                            </div>
+                        </div>
+
+                        <div class="form-price">
+                            <form role="form"
+                                action="https://script.google.com/macros/s/AKfycbxJStDRJ4bYpK9aHxkZAnD34yc2rlnliCT386yeHST_uA0z0Pcf/exec"
+                                id="ant-booking-form">
+                                <div class="evo-alert alert alert-success alert-dismissible fade in" role="alert"
+                                    style="display:none;">
+                                    Cảm ơn bạn đã liên hệ với chúng tôi. Chúng tôi sẽ trả lời bạn sớm nhất có thể.
+                                </div>
+                                <div class="form-signup clearfix margin-top-20">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-xs-12">
+                                            <fieldset class="form-group">
+                                                <label>Họ tên<span class="required">*</span></label>
+                                                <input type="text" name="Họ tên" id="name"
+                                                    class="form-control  form-control-lg"
+                                                    data-validation-error-msg="Không được để trống"
+                                                    data-validation="required" required />
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-sm-6 col-xs-12">
+                                            <fieldset class="form-group">
+                                                <label>Email<span class="required">*</span></label>
+                                                <input type="email" name="Email" data-validation="email"
+                                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$"
+                                                    data-validation-error-msg="Email sai định dạng" id="email"
+                                                    class="form-control form-control-lg" required />
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-sm-12 col-xs-12">
+                                            <fieldset class="form-group">
+                                                <label>Điện thoại<span class="required">*</span></label>
+                                                <input type="tel" name="Điện thoại" data-validation="tel"
+                                                    data-validation-error-msg="Không được bỏ trống" id="tel"
+                                                    class="form-control form-control-lg" required />
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-sm-12 col-xs-12">
+                                            <fieldset class="form-group">
+                                                <label>Nội dung<span class="required">*</span></label>
+                                                <textarea name="Nội dung" id="comment"
+                                                    class="form-control form-control-lg" rows="5"
+                                                    data-validation-error-msg="Không được để trống"
+                                                    data-validation="required" required></textarea>
+                                            </fieldset>
+                                            <div class="pull-xs-left text-center" style="margin-top:20px;">
+                                                <button id="submit-formdd"
+                                                    class="btn btn-blues btn-style btn-style-active">Gửi tin
+                                                    nhắn</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <script>
+                            document.getElementById('submit-formdd').addEventListener("click", function (event) {
+                                event.preventDefault();
+                                document.getElementById("submit-formdd").disabled = true;
+                                var request = new XMLHttpRequest();
+                                var data = new URLSearchParams(Array.from(new FormData(document.getElementById('ant-booking-form')))).toString();
+                                var form = document.getElementById('ant-booking-form');
+                                var data2 = 'https://script.google.com/macros/s/AKfycbxJStDRJ4bYpK9aHxkZAnD34yc2rlnliCT386yeHST_uA0z0Pcf/exec?' + data;
+                                request.open('GET', data2);
+                                request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
+                                request.onreadystatechange = function () {
+                                    if (request.readyState === 4 && request.status === 200) {
+                                        document.getElementById("submit-formdd").disabled = false;
+                                        form.reset();
+                                        var thankYouMessage = form.querySelector(".evo-alert");
+                                        if (thankYouMessage) {
+                                            thankYouMessage.style.display = "block";
+                                        }
+                                    }
+                                };
+                                request.send();
+                            });
+                        </script>
+
+                    </div>
+                    <div class="col-md-6">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="awe-section-6">
+        <div class="section_statistic">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="service-title text-center">
+                            <h2>Thống kê</h2>
+                            <div class="service-subtitle">
+                                Tổng quan qua các con số
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="statistic-sub-title">
+                            <h3>Công ty ship hàng, mua hộ hàng chuyên nghiệp hàng đầu</h3>
+                            <p>Chúng tôi mong muốn kết nối seller tại Mỹ và người bán hàng tại Việt Nam, giúp bạn giải
+                                quyết những khó khăn khi mua hàng trên website Mỹ, thanh toán trực tuyến cũng như thủ
+                                tục vận chuyển hàng từ Mỹ về Việt Nam.</p>
+                        </div>
+                        <div class="statistic-main-number">
+
+
+
+
+                            <span class="block progress-bar-text">Vận chuyển đường bộ <em>(hơn 1.000.000
+                                    km/năm)</em></span>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped active" role="progressbar"
+                                    aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div>
+                            </div>
+
+
+
+
+                            <span class="block progress-bar-text">Vận chuyển đường sắt <em>(hơn 500.000
+                                    tấn/năm)</em></span>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped active" role="progressbar"
+                                    aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%"></div>
+                            </div>
+
+
+
+
+                            <span class="block progress-bar-text">Vận chuyển hàng không <em>(hơn 100.000
+                                    tấn/năm)</em></span>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped active" role="progressbar"
+                                    aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
+                            </div>
+
+
+
+
+                            <span class="block progress-bar-text">Vận chuyển đường biển <em>(hơn 50.000
+                                    container/năm)</em></span>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped active" role="progressbar"
+                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="statistic-image">
+                            <a href="#">
+                                <img src="//bizweb.dktcdn.net/100/296/451/themes/638268/assets/statistic_image.png?1705894744374"
+                                    alt="Thống kê" class="img-responsive center-block" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="awe-section-7">
+        <div class="section_index_brand">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="brand-owl owl-carousel not-dqowl">
+
+
+
+
+
+
+                            <div class="item">
+                                <a href="#" target="_blank">
+                                    <picture>
+                                        <source media="(min-width: 992px)"
+                                            srcset="//bizweb.dktcdn.net/thumb/compact/100/296/451/themes/638268/assets/partner_1.jpg?1705894744374">
+                                        <source media="(min-width: 769px)"
+                                            srcset="//bizweb.dktcdn.net/thumb/medium/100/296/451/themes/638268/assets/partner_1.jpg?1705894744374">
+                                        <source media="(min-width: 480px)"
+                                            srcset="//bizweb.dktcdn.net/thumb/small/100/296/451/themes/638268/assets/partner_1.jpg?1705894744374">
+                                        <img src="//bizweb.dktcdn.net/thumb/large/100/296/451/themes/638268/assets/partner_1.jpg?1705894744374"
+                                            alt="Đối tác" class="img-responsive center-block" />
+                                    </picture>
+                                </a>
+                            </div>
+
+
+
+
+
+
+
+                            <div class="item">
+                                <a href="#" target="_blank">
+                                    <picture>
+                                        <source media="(min-width: 992px)"
+                                            srcset="//bizweb.dktcdn.net/thumb/compact/100/296/451/themes/638268/assets/partner_2.jpg?1705894744374">
+                                        <source media="(min-width: 769px)"
+                                            srcset="//bizweb.dktcdn.net/thumb/medium/100/296/451/themes/638268/assets/partner_2.jpg?1705894744374">
+                                        <source media="(min-width: 480px)"
+                                            srcset="//bizweb.dktcdn.net/thumb/small/100/296/451/themes/638268/assets/partner_2.jpg?1705894744374">
+                                        <img src="//bizweb.dktcdn.net/thumb/large/100/296/451/themes/638268/assets/partner_2.jpg?1705894744374"
+                                            alt="Đối tác" class="img-responsive center-block" />
+                                    </picture>
+                                </a>
+                            </div>
+
+
+
+
+
+
+
+                            <div class="item">
+                                <a href="#" target="_blank">
+                                    <picture>
+                                        <source media="(min-width: 992px)"
+                                            srcset="//bizweb.dktcdn.net/thumb/compact/100/296/451/themes/638268/assets/partner_3.jpg?1705894744374">
+                                        <source media="(min-width: 769px)"
+                                            srcset="//bizweb.dktcdn.net/thumb/medium/100/296/451/themes/638268/assets/partner_3.jpg?1705894744374">
+                                        <source media="(min-width: 480px)"
+                                            srcset="//bizweb.dktcdn.net/thumb/small/100/296/451/themes/638268/assets/partner_3.jpg?1705894744374">
+                                        <img src="//bizweb.dktcdn.net/thumb/large/100/296/451/themes/638268/assets/partner_3.jpg?1705894744374"
+                                            alt="Đối tác" class="img-responsive center-block" />
+                                    </picture>
+                                </a>
+                            </div>
+
+
+
+
+
+
+
+                            <div class="item">
+                                <a href="#" target="_blank">
+                                    <picture>
+                                        <source media="(min-width: 992px)"
+                                            srcset="//bizweb.dktcdn.net/thumb/compact/100/296/451/themes/638268/assets/partner_4.jpg?1705894744374">
+                                        <source media="(min-width: 769px)"
+                                            srcset="//bizweb.dktcdn.net/thumb/medium/100/296/451/themes/638268/assets/partner_4.jpg?1705894744374">
+                                        <source media="(min-width: 480px)"
+                                            srcset="//bizweb.dktcdn.net/thumb/small/100/296/451/themes/638268/assets/partner_4.jpg?1705894744374">
+                                        <img src="//bizweb.dktcdn.net/thumb/large/100/296/451/themes/638268/assets/partner_4.jpg?1705894744374"
+                                            alt="Đối tác" class="img-responsive center-block" />
+                                    </picture>
+                                </a>
+                            </div>
+
+
+
+
+
+
+
+                            <div class="item">
+                                <a href="#" target="_blank">
+                                    <picture>
+                                        <source media="(min-width: 992px)"
+                                            srcset="//bizweb.dktcdn.net/thumb/compact/100/296/451/themes/638268/assets/partner_5.jpg?1705894744374">
+                                        <source media="(min-width: 769px)"
+                                            srcset="//bizweb.dktcdn.net/thumb/medium/100/296/451/themes/638268/assets/partner_5.jpg?1705894744374">
+                                        <source media="(min-width: 480px)"
+                                            srcset="//bizweb.dktcdn.net/thumb/small/100/296/451/themes/638268/assets/partner_5.jpg?1705894744374">
+                                        <img src="//bizweb.dktcdn.net/thumb/large/100/296/451/themes/638268/assets/partner_5.jpg?1705894744374"
+                                            alt="Đối tác" class="img-responsive center-block" />
+                                    </picture>
+                                </a>
+                            </div>
+
+
+
+
+
+
+
+                            <div class="item">
+                                <a href="#" target="_blank">
+                                    <picture>
+                                        <source media="(min-width: 992px)"
+                                            srcset="//bizweb.dktcdn.net/thumb/compact/100/296/451/themes/638268/assets/partner_6.jpg?1705894744374">
+                                        <source media="(min-width: 769px)"
+                                            srcset="//bizweb.dktcdn.net/thumb/medium/100/296/451/themes/638268/assets/partner_6.jpg?1705894744374">
+                                        <source media="(min-width: 480px)"
+                                            srcset="//bizweb.dktcdn.net/thumb/small/100/296/451/themes/638268/assets/partner_6.jpg?1705894744374">
+                                        <img src="//bizweb.dktcdn.net/thumb/large/100/296/451/themes/638268/assets/partner_6.jpg?1705894744374"
+                                            alt="Đối tác" class="img-responsive center-block" />
+                                    </picture>
+                                </a>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="awe-section-8">
+        <section class="section-news">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="service-title text-center">
+                            <h2>Tin tức</h2>
+                            <div class="service-subtitle">
+                                Về Logistic & vận chuyển
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="owl_news owl-carousel not-dqowl">
+
+                            <div class="item">
+                                <article class="blog-item">
+                                    <div class="blog-item-thumbnail">
+                                        <a href="/7-tuyet-chieu-tao-an-tuong-tot-khi-ship-hang-cho-khach">
+
+                                            <picture>
+                                                <source media="(min-width: 1200px)"
+                                                    srcset="//bizweb.dktcdn.net/thumb/large/100/296/451/articles/ytr.jpg?v=1520086912530">
+                                                <source media="(min-width: 992px)"
+                                                    srcset="//bizweb.dktcdn.net/thumb/medium/100/296/451/articles/ytr.jpg?v=1520086912530">
+                                                <source media="(min-width: 767px)"
+                                                    srcset="//bizweb.dktcdn.net/thumb/grande/100/296/451/articles/ytr.jpg?v=1520086912530">
+                                                <source media="(min-width: 666px)"
+                                                    srcset="//bizweb.dktcdn.net/thumb/grande/100/296/451/articles/ytr.jpg?v=1520086912530">
+                                                <source media="(min-width: 567px)"
+                                                    srcset="//bizweb.dktcdn.net/thumb/large/100/296/451/articles/ytr.jpg?v=1520086912530">
+                                                <source media="(min-width: 480px)"
+                                                    srcset="//bizweb.dktcdn.net/thumb/medium/100/296/451/articles/ytr.jpg?v=1520086912530">
+                                                <img src="//bizweb.dktcdn.net/thumb/large/100/296/451/articles/ytr.jpg?v=1520086912530"
+                                                    alt="7 tuyệt chiêu tạo ấn tượng tốt khi ship hàng cho khách"
+                                                    class="img-responsive center-block" />
+                                            </picture>
+
+                                        </a>
+                                        <div class="articles-date">
+                                            <span>03/03</span> 2018
+                                        </div>
+                                    </div>
+                                    <h3 class="blog-item-name margin-top-10"><a
+                                            href="/7-tuyet-chieu-tao-an-tuong-tot-khi-ship-hang-cho-khach"
+                                            title="7 tuyệt chiêu tạo ấn tượng tốt khi ship hàng cho khách">7 tuyệt chiêu
+                                            tạo ấn tượng tốt khi ship hàng cho khách</a></h3>
+                                    <p class="blog-item-summary margin-bottom-5">Hầu hết các&nbsp;dịch vụ ship
+                                        hàng&nbsp;ở Việt Nam vẫn chưa tạo được ấn tượng tốt với khách hàng và khiến...
+                                    </p>
+                                </article>
+                            </div>
+
+                            <div class="item">
+                                <article class="blog-item">
+                                    <div class="blog-item-thumbnail">
+                                        <a href="/5-loi-ship-hang-pho-bien-va-cac-cach-de-han-che-chung">
+
+                                            <picture>
+                                                <source media="(min-width: 1200px)"
+                                                    srcset="//bizweb.dktcdn.net/thumb/large/100/296/451/articles/mua-hang-tu-my-1418183987.jpg?v=1519803607920">
+                                                <source media="(min-width: 992px)"
+                                                    srcset="//bizweb.dktcdn.net/thumb/medium/100/296/451/articles/mua-hang-tu-my-1418183987.jpg?v=1519803607920">
+                                                <source media="(min-width: 767px)"
+                                                    srcset="//bizweb.dktcdn.net/thumb/grande/100/296/451/articles/mua-hang-tu-my-1418183987.jpg?v=1519803607920">
+                                                <source media="(min-width: 666px)"
+                                                    srcset="//bizweb.dktcdn.net/thumb/grande/100/296/451/articles/mua-hang-tu-my-1418183987.jpg?v=1519803607920">
+                                                <source media="(min-width: 567px)"
+                                                    srcset="//bizweb.dktcdn.net/thumb/large/100/296/451/articles/mua-hang-tu-my-1418183987.jpg?v=1519803607920">
+                                                <source media="(min-width: 480px)"
+                                                    srcset="//bizweb.dktcdn.net/thumb/medium/100/296/451/articles/mua-hang-tu-my-1418183987.jpg?v=1519803607920">
+                                                <img src="//bizweb.dktcdn.net/thumb/large/100/296/451/articles/mua-hang-tu-my-1418183987.jpg?v=1519803607920"
+                                                    alt="5 lỗi ship hàng phổ biến và các cách để hạn chế chúng"
+                                                    class="img-responsive center-block" />
+                                            </picture>
+
+                                        </a>
+                                        <div class="articles-date">
+                                            <span>28/02</span> 2018
+                                        </div>
+                                    </div>
+                                    <h3 class="blog-item-name margin-top-10"><a
+                                            href="/5-loi-ship-hang-pho-bien-va-cac-cach-de-han-che-chung"
+                                            title="5 lỗi ship hàng phổ biến và các cách để hạn chế chúng">5 lỗi ship
+                                            hàng phổ biến và các cách để hạn chế chúng</a></h3>
+                                    <p class="blog-item-summary margin-bottom-5">Dịch vụ ship hàng&nbsp;ra đời giúp
+                                        người mua hàng có được sản phẩm mình ưng ý mà không phải đến...</p>
+                                </article>
+                            </div>
+
+                            <div class="item">
+                                <article class="blog-item">
+                                    <div class="blog-item-thumbnail">
+                                        <a href="/5-tuyet-chieu-bien-ship-hang-thanh-loi-the-canh-tranh">
+
+                                            <picture>
+                                                <source media="(min-width: 1200px)"
+                                                    srcset="//bizweb.dktcdn.net/thumb/large/100/296/451/articles/hinh-thuc-thanh-toan-1.jpg?v=1519803523123">
+                                                <source media="(min-width: 992px)"
+                                                    srcset="//bizweb.dktcdn.net/thumb/medium/100/296/451/articles/hinh-thuc-thanh-toan-1.jpg?v=1519803523123">
+                                                <source media="(min-width: 767px)"
+                                                    srcset="//bizweb.dktcdn.net/thumb/grande/100/296/451/articles/hinh-thuc-thanh-toan-1.jpg?v=1519803523123">
+                                                <source media="(min-width: 666px)"
+                                                    srcset="//bizweb.dktcdn.net/thumb/grande/100/296/451/articles/hinh-thuc-thanh-toan-1.jpg?v=1519803523123">
+                                                <source media="(min-width: 567px)"
+                                                    srcset="//bizweb.dktcdn.net/thumb/large/100/296/451/articles/hinh-thuc-thanh-toan-1.jpg?v=1519803523123">
+                                                <source media="(min-width: 480px)"
+                                                    srcset="//bizweb.dktcdn.net/thumb/medium/100/296/451/articles/hinh-thuc-thanh-toan-1.jpg?v=1519803523123">
+                                                <img src="//bizweb.dktcdn.net/thumb/large/100/296/451/articles/hinh-thuc-thanh-toan-1.jpg?v=1519803523123"
+                                                    alt="5 tuyệt chiêu biến ship hàng thành lợi thế cạnh tranh"
+                                                    class="img-responsive center-block" />
+                                            </picture>
+
+                                        </a>
+                                        <div class="articles-date">
+                                            <span>28/02</span> 2018
+                                        </div>
+                                    </div>
+                                    <h3 class="blog-item-name margin-top-10"><a
+                                            href="/5-tuyet-chieu-bien-ship-hang-thanh-loi-the-canh-tranh"
+                                            title="5 tuyệt chiêu biến ship hàng thành lợi thế cạnh tranh">5 tuyệt chiêu
+                                            biến ship hàng thành lợi thế cạnh tranh</a></h3>
+                                    <p class="blog-item-summary margin-bottom-5">Thương mại điện tử vẫn chưa thật sự phổ
+                                        biến và được đánh giá cao đối với thị trường Việt...</p>
+                                </article>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="site-footer">
+            <div class="container">
+                <div class="footer-inner padding-top-25 padding-bottom-10">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                            <div class="footer-widget">
+                                <h3><span>
+                                        <a href="/">
+                                            <img src="//bizweb.dktcdn.net/100/296/451/themes/638268/assets/logo.png?1705894744374"
+                                                alt="logo Về chúng tôi">
+                                        </a>
+                                    </span></h3>
+                                <ul class="list-menu">
+                                    <li>
+                                        <p>
+                                            Ant Logistic là giải pháp quản lý bán hàng trên nền tảng điện toán đám mây,
+                                            cung cấp website, phần mềm quản lý bán hàng, đồng bộ thời gian thực dữ liệu
+                                            giữa online và offline, giúp doanh nghiệp phát triển kinh doanh online hiệu
+                                            quả hơn.
+                                        </p>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
+                            <div class="footer-widget">
+                                <h3><span>Giải pháp</span></h3>
+                                <ul class="list-menu">
+
+                                    <li><a href="/">Trang chủ</a></li>
+
+                                    <li><a href="/gioi-thieu">Giới thiệu</a></li>
+
+                                    <li><a href="/dich-vu">Dịch vụ</a></li>
+
+                                    <li><a href="/tin-tuc">Tin tức</a></li>
+
+                                    <li><a href="/lien-he">Liên hệ</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
+                            <div class="footer-widget">
+                                <h3><span>Kinh nghiệm</span></h3>
+                                <ul class="list-menu">
+
+                                    <li><a href="/">Trang chủ</a></li>
+
+                                    <li><a href="/gioi-thieu">Giới thiệu</a></li>
+
+                                    <li><a href="/dich-vu">Dịch vụ</a></li>
+
+                                    <li><a href="/tin-tuc">Tin tức</a></li>
+
+                                    <li><a href="/lien-he">Liên hệ</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                            <div class="footer-widget no-border">
+                                <h3><span>Liên hệ</span></h3>
+                                <ul class="widget-menu contact-info-page">
+
+                                    <li><i class="fa fa-map-marker color-x" aria-hidden="true"></i> 70 Lu Gia, Ward 15,
+                                        District 11, Ho Chi Minh City</li>
+                                    <li><i class="fa fa-phone color-x" aria-hidden="true"></i> <a
+                                            href="tel:19006750">1900 6750</a></li>
+                                    <li><i class="fa fa-envelope-o" aria-hidden="true"></i> <a
+                                            href="mailto:support@sapo.vn">support@sapo.vn</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright clearfix">
+            <div class="container">
+                <div class="inner clearfix">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <span>© Bản quyền thuộc về <b>Kiến Vàng</b> <span class="s480-f">|</span> Cung cấp bởi <a
+                                    href="https://www.sapo.vn/?utm_campaign=cpn:kho_theme-plm:footer&utm_source=Tu_nhien&utm_medium=referral&utm_content=fm:text_link-km:-sz:&utm_term=&campaign=kho_theme-sapo"
+                                    title="Sapo" target="_blank" rel="nofollow">Sapo</a></span>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="btn-wrapper back-to-top">
+                    <a href="#top" class="btn btn-transparent"><i class="fa fa-angle-up"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <link rel="preload" as="script"
+        href="//bizweb.dktcdn.net/100/296/451/themes/638268/assets/api-jquery.js?1705894744374" />
+    <script src="//bizweb.dktcdn.net/100/296/451/themes/638268/assets/api-jquery.js?1705894744374"
+        type="text/javascript"></script>
+    <link rel="preload" as="script"
+        href="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"
+        type="text/javascript"></script>
+    <script>
+        $.validate({});
+    </script>
+    <link rel="preload" as="script" href="assets/js/main.js" />
+    <script src="assets/js/main.js" type="text/javascript"></script>
+    <div class="backdrop__body-backdrop___1rvky"></div>
+    <div class="c-menu--slide-left">
+        <div class="la-nav-top-login">
+            <div class="la-avatar-nav p-relative text-center">
+                <a href="/account">
+                    <img class="img-responsive"
+                        src="//bizweb.dktcdn.net/100/296/451/themes/638268/assets/av-none-user.png?1705894744374"
+                        alt="avatar">
+                </a>
+                <div class="la-hello-user-nav ng-scope">Xin chào</div>
+                <img id="close-nav" class="c-menu__close"
+                    src="//bizweb.dktcdn.net/100/296/451/themes/638268/assets/ic-close-menu.png?1705894744374"
+                    alt="close nav">
+            </div>
+            <div class="la-action-link-nav text-center">
+                Chào mừng quý khách đến với Ant Logistic
+            </div>
+        </div>
+        <div class="la-scroll-fix-infor-user">
+            <!--CATEGORY-->
+            <div class="la-nav-menu-items">
+                <div class="la-title-nav-items">Tất cả danh mục</div>
+                <ul class="la-nav-list-items">
+
+
+                    <li class="ng-scope">
+                        <a href="/">Trang chủ</a>
+                    </li>
+
+
+
+                    <li class="ng-scope">
+                        <a href="/gioi-thieu">Giới thiệu</a>
+                    </li>
+
+
+
+                    <li class="ng-scope ng-has-child1">
+                        <a href="/dich-vu">Dịch vụ <i class="fa fa-plus fa1" aria-hidden="true"></i></a>
+                        <ul class="ul-has-child1">
+
+
+                            <li class="ng-scope ng-has-child2">
+                                <a href="/mua-hang-amazon">Mua hàng trên Amazon <i class="fa fa-plus fa2"
+                                        aria-hidden="true"></i></a>
+                                <ul class="ul-has-child2">
+
+                                    <li class="ng-scope">
+                                        <a href="/dich-vu">Dịch vụ</a>
+                                    </li>
+
+                                    <li class="ng-scope">
+                                        <a href="/tien-ich">Tiện ích</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+
+
+                            <li class="ng-scope ng-has-child2">
+                                <a href="/mua-hang-ebay">Mua hàng trên eBay <i class="fa fa-plus fa2"
+                                        aria-hidden="true"></i></a>
+                                <ul class="ul-has-child2">
+
+                                    <li class="ng-scope">
+                                        <a href="/dich-vu">Dịch vụ</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+
+                        </ul>
+                    </li>
+
+
+
+                    <li class="ng-scope">
+                        <a href="/tin-tuc">Tin tức</a>
+                    </li>
+
+
+
+                    <li class="ng-scope">
+                        <a href="/lien-he">Liên hệ</a>
+                    </li>
+
+
+                </ul>
+            </div>
+            <div class="la-nav-slide-banner">
+
+                <a href="#">
+                    <img alt="Ant Logistic"
+                        src="//bizweb.dktcdn.net/100/296/451/themes/638268/assets/left-menu-banner-1.png?1705894744374" />
+                </a>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="popup-sapo">
+        <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                <path
+                    d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v18.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S19.4 416 32 416H416c12.6 0 24-7.4 29.2-18.9s3.1-25-5.3-34.4l-7.4-8.3C401.3 319.2 384 273.9 384 226.8V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm45.3 493.3c12-12 18.7-28.3 18.7-45.3H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z" />
+            </svg>
+        </div>
+        <div class="content">
+            <div class="title">Tích hợp sẵn các ứng dụng</div>
+            <ul>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                        <path
+                            d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z" />
+                    </svg>
+                    <a href="https://apps.sapo.vn/danh-gia-san-pham-v2" target="_blank" title="Đánh giá sản phẩm">Đánh
+                        giá sản phẩm</a>
+                </li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                        <path
+                            d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z" />
+                    </svg>
+                    <a href="https://apps.sapo.vn/mua-x-tang-y-v2" target="_blank" title="Mua X tặng Y">Mua X tặng Y</a>
+                </li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                        <path
+                            d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z" />
+                    </svg>
+                    <a href="https://apps.sapo.vn/quan-ly-affiliate-v2" target="_blank" title="Ứng dụng Affiliate">Ứng
+                        dụng Affiliate</a>
+                </li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                        <path
+                            d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z" />
+                    </svg>
+                    <a href="https://apps.sapo.vn/ae-da-ngon-ngu" target="_blank" title="Đa ngôn ngữ">Đa ngôn ngữ</a>
+                </li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                        <path
+                            d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z" />
+                    </svg>
+                    <a href="https://m.me/sapo.vn" target="_blank" title="Chatlive Facebook">Chatlive Facebook</a>
+                </li>
+            </ul>
+            <div class="ghichu">Lưu ý với các ứng dụng trả phí bạn cần cài đặt và mua ứng dụng này trên App store Sapo
+                để sử dụng ngay</div>
+            <a href="javascript:;" title="Đóng" class="close-popup-sapo">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px"
+                    y="0px" viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512.001 512.001;"
+                    xml:space="preserve">
+                    <g>
+                        <g>
+                            <path
+                                d="M284.286,256.002L506.143,34.144c7.811-7.811,7.811-20.475,0-28.285c-7.811-7.81-20.475-7.811-28.285,0L256,227.717    L34.143,5.859c-7.811-7.811-20.475-7.811-28.285,0c-7.81,7.811-7.811,20.475,0,28.285l221.857,221.857L5.858,477.859    c-7.811,7.811-7.811,20.475,0,28.285c3.905,3.905,9.024,5.857,14.143,5.857c5.119,0,10.237-1.952,14.143-5.857L256,284.287    l221.857,221.857c3.905,3.905,9.024,5.857,14.143,5.857s10.237-1.952,14.143-5.857c7.811-7.811,7.811-20.475,0-28.285    L284.286,256.002z">
+                            </path>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+        </div>
+    </div>
+    <script>
+        $('.popup-sapo .icon').click(function () {
+            $(".popup-sapo").toggleClass("active");
+        });
+        $('.close-popup-sapo').click(function () {
+            $(".popup-sapo").toggleClass("active");
+        });
+    </script>
+    <a class="wolf-chat-plugin" href="https://m.me/sapo.vn" target="_blank">
+        <div style="margin-left: -2px; margin-right: 6px;">
+            <div style="display: flex; align-items: center;"><svg width="24" height="24" viewBox="0 0 24 24"
+                    fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0.75 11.9125C0.75 5.6422 5.66254 1 12 1C18.3375 1 23.25 5.6422 23.25 11.9125C23.25 18.1828 18.3375 22.825 12 22.825C10.8617 22.825 9.76958 22.6746 8.74346 22.3925C8.544 22.3376 8.33188 22.3532 8.1426 22.4368L5.90964 23.4224C5.32554 23.6803 4.66618 23.2648 4.64661 22.6267L4.58535 20.6253C4.57781 20.3789 4.46689 20.1483 4.28312 19.9839C2.09415 18.0264 0.75 15.1923 0.75 11.9125ZM8.54913 9.86084L5.24444 15.1038C4.92731 15.6069 5.54578 16.1739 6.01957 15.8144L9.56934 13.1204C9.80947 12.9381 10.1413 12.9371 10.3824 13.118L13.0109 15.0893C13.7996 15.6809 14.9252 15.4732 15.451 14.6392L18.7556 9.39616C19.0727 8.893 18.4543 8.326 17.9805 8.68555L14.4307 11.3796C14.1906 11.5618 13.8587 11.5628 13.6176 11.3819L10.9892 9.41061C10.2005 8.81909 9.07479 9.02676 8.54913 9.86084Z"
+                        fill="white"></path>
+                </svg></div>
+        </div>
+        <div style="color: white; display: flex; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 17px; font-style: normal; font-weight: 600; line-height: 22px; user-select: none; white-space: nowrap;">
+            Chat
+        </div>
+    </a>
+    <style>
+        .popup-sapo {
+            position: fixed;
+            bottom: 80px;
+            left: 17px;
+            margin: 0;
+            z-index: 999;
+            top: auto !important
+        }
+
+        .popup-sapo .icon {
+            position: relative;
+            z-index: 4;
+            height: 48px;
+            width: 48px;
+            text-align: center;
+            border-radius: 50%;
+            border: 1px solid #ffffff;
+            cursor: pointer;
+            background: #db0f30;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            animation: pulse 2s infinite;
+            animation: pulse 2s infinite;
+            cursor: pointer
+        }
+
+        .popup-sapo .icon svg {
+            fill: #ffffff;
+            width: 20px;
+            height: 20px;
+            transition: opacity 0.35s ease-in-out, -webkit-transform 0.35s ease-in-out;
+            transition: opacity 0.35s ease-in-out, transform 0.35s ease-in-out;
+            transition: opacity 0.35s ease-in-out, transform 0.35s ease-in-out, -webkit-transform 0.35s ease-in-out;
+            animation: iconSkew 1s infinite ease-out;
+            min-height: -webkit-fill-available
+        }
+
+        .popup-sapo .content {
+            background: #db0f30;
+            color: #fff;
+            padding: 20px 10px 40px;
+            border-radius: 10px;
+            width: 300px;
+            position: absolute;
+            bottom: 27px;
+            left: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            -webkit-transform-origin: 100% bottom;
+            transform-origin: 0 bottom;
+            transform: scale(0);
+            -webkit-transform: scale(0);
+            -moz-transform: scale(0);
+            -ms-transform: scale(0);
+            -o-transform: scale(0);
+            transition: -webkit-transform 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+            transition: transform 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+            transition: transform 0.35s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+            -webkit-transition: transform 0.35s cubic-bezier(0.165, 0.84, 0.44, 1)
+        }
+
+        @media (max-width: 500px) {
+            .popup-sapo .content {
+                width: 250px
+            }
+        }
+
+        .popup-sapo .content .title {
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 12px;
+            margin-top: 8px;
+            color: #fff;
+        }
+
+        .popup-sapo .content .close-popup-sapo {
+            position: absolute;
+            right: 10px;
+            top: 5px;
+            cursor: pointer
+        }
+
+        .popup-sapo .content .close-popup-sapo svg {
+            width: 15px;
+            height: 15px
+        }
+
+        .popup-sapo .content .close-popup-sapo svg path {
+            fill: #fff
+        }
+
+        .popup-sapo .content ul {
+            margin-bottom: 20px
+        }
+
+        .popup-sapo .content ul li {
+            margin-bottom: 10px
+        }
+
+        .popup-sapo .content ul li svg {
+            margin-right: 10px
+        }
+
+        .popup-sapo .content ul li svg path {
+            fill: #fff
+        }
+
+        .popup-sapo .content ul li a {
+            color: #fff
+        }
+
+        .popup-sapo .content ul li a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        .popup-sapo .content .ghichu {
+            font-style: italic;
+            font-size: 14px
+        }
+
+        .popup-sapo.active .content {
+            -ms-transition-delay: 0.1s;
+            -webkit-transition-delay: 0.15s;
+            transition-delay: 0.1s;
+            transform: scale(1);
+            -webkit-transform: scale(1);
+            -moz-transform: scale(1);
+            -ms-transform: scale(1);
+            -o-transform: scale(1)
+        }
+
+        .wolf-chat-plugin {
+            bottom: 30px;
+            z-index: 999;
+            background-color: rgb(10, 124, 255);
+            align-items: center;
+            border-radius: 60px;
+            display: flex;
+            height: 44px;
+            padding: 0px 16px;
+            position: fixed;
+            width: fit-content;
+            right: 0px;
+            top: auto !important;
+        }
+    </style>
+</body>
+
+</html>
