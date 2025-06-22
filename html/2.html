@@ -5,32 +5,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>
-        Bảo hiểm hàng hóa | Ant Logistic
+        Tin tức | Ant Logistic
     </title>
     <!-- ================= Page description ================== -->
 
-    <meta name="description"
-        content="Trách nhiệm của Ant Logistic: Chính sách về trách nhiệm với các hoạt động giao dịch của Ant Logistic được thực hiện dựa trên các điều khoản của các website quốc tế và theo luật pháp Việt Nam">
-
     <!-- ================= Meta ================== -->
-    <meta name="keywords" content="Bảo hiểm hàng hóa, Ant Logistic" />
-    <link rel="canonical" href="bao-hiem-hang-hoa.html" />
+    <meta name="keywords" content="Tin tức, Ant Logistic, ant-logistic.mysapo.net" />
+    <link rel="canonical" href="https://ant-logistic.mysapo.net/tin-tuc" />
     <meta name='revisit-after' content='1 days' />
     <meta name="robots" content="noodp,index,follow" />
     <!-- ================= Favicon ================== -->
 
-    <link rel="icon" href="../images/logo.png" type="image/x-icon" />
+    <link rel="icon" href="../images/favicon.png" type="image/x-icon" />
 
     <!-- Facebook Open Graph meta tags -->
 
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Bảo hiểm hàng hóa">
+    <meta property="og:title" content="Tin tức">
     <meta property="og:image" content="../images/logo.png">
     <meta property="og:image:secure_url" content="../images/logo.png">
 
-    <meta property="og:description"
-        content="Trách nhiệm của Ant Logistic: Chính sách về trách nhiệm với các hoạt động giao dịch của Ant Logistic được thực hiện dựa trên các điều khoản của các website quốc tế và theo luật pháp Việt Nam">
-    <meta property="og:url" content="bao-hiem-hang-hoa.html">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="https://ant-logistic.mysapo.net/tin-tuc">
     <meta property="og:site_name" content="Ant Logistic">
     <link rel="preload" as="style" type="text/css" href="../css/base.scss.css" onload="this.rel='stylesheet'" />
     <link href="../css/base.scss.css" rel="stylesheet" type="text/css" media="all" />
@@ -50,7 +46,7 @@
             "name": "Ant Logistic",
             "role": "main"
         };
-        Bizweb.template = 'page';
+        Bizweb.template = 'blog';
         if (!Bizweb.fbEventId) Bizweb.fbEventId = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
             var r = Math.random() * 16 | 0,
                 v = c == 'x' ? r : (r & 0x3 | 0x8);
@@ -74,18 +70,214 @@
         })();
     </script>
 
+
     <script>
         window.BizwebAnalytics = window.BizwebAnalytics || {};
         window.BizwebAnalytics.meta = window.BizwebAnalytics.meta || {};
         window.BizwebAnalytics.meta.currency = 'VND';
         window.BizwebAnalytics.tracking_url = '/s';
+
         var meta = {};
+
+
         for (var attr in meta) {
             window.BizwebAnalytics.meta[attr] = meta[attr];
         }
     </script>
+
+
     <script src="../js/stats.min.js"></script>
 
+    <style>
+        .bread-crumb {
+            background-image: url('../images/breadcrumb.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 50px 0;
+            position: relative;
+            margin-bottom: 40px;
+        }
+
+        .bread-crumb:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .bread-crumb .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .bread-crumb h2.title {
+            color: #fff;
+            font-size: 36px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .bread-crumb .breadcrumb {
+            background: transparent;
+            margin: 0;
+            padding: 0;
+        }
+
+        .bread-crumb .breadcrumb li,
+        .bread-crumb .breadcrumb a {
+            color: #fff;
+        }
+
+        .article-item {
+            margin-bottom: 30px;
+        }
+
+        .article-item-wrap {
+            background: #f8f8f8;
+            border-radius: 5px;
+            overflow: hidden;
+            height: 100%;
+        }
+
+        .article-item-wrap img {
+            width: 100%;
+            height: auto;
+            transition: all 0.3s ease;
+        }
+
+        .article-item-wrap:hover img {
+            transform: scale(1.05);
+        }
+
+        .article-item-info {
+            padding: 15px;
+        }
+
+        .article-item-info h3 {
+            font-size: 18px;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .article-item-info h3 a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .article-item-info h3 a:hover {
+            color: #db0f30;
+        }
+
+        .article-item-info p {
+            color: #666;
+            margin-bottom: 0;
+            font-size: 14px;
+        }
+
+        .article-meta {
+            margin-bottom: 10px;
+            font-size: 12px;
+            color: #999;
+        }
+
+        .article-meta span {
+            margin-right: 15px;
+        }
+
+        .article-meta i {
+            margin-right: 5px;
+        }
+
+        .sidebar-item {
+            margin-bottom: 30px;
+            background: #f8f8f8;
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        .sidebar-title {
+            border-bottom: 2px solid #db0f30;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+        }
+
+        .sidebar-title h3 {
+            margin: 0;
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .sidebar-content ul {
+            padding-left: 0;
+        }
+
+        .sidebar-content ul li {
+            list-style: none;
+            padding: 8px 0;
+            border-bottom: 1px dashed #ddd;
+        }
+
+        .sidebar-content ul li:last-child {
+            border-bottom: none;
+        }
+
+        .sidebar-content ul li a {
+            color: #333;
+            text-decoration: none;
+            display: block;
+        }
+
+        .sidebar-content ul li a:hover {
+            color: #db0f30;
+        }
+
+        .sidebar-content ul li a:before {
+            content: "\f105";
+            font-family: FontAwesome;
+            margin-right: 10px;
+            color: #db0f30;
+        }
+
+        .related-post-item {
+            display: flex;
+            margin-bottom: 15px;
+        }
+
+        .related-post-item img {
+            width: 80px;
+            height: 60px;
+            object-fit: cover;
+            margin-right: 10px;
+        }
+
+        .related-post-info {
+            flex: 1;
+        }
+
+        .related-post-info h4 {
+            margin: 0 0 5px;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        .related-post-info h4 a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .related-post-info h4 a:hover {
+            color: #db0f30;
+        }
+
+        .related-post-info .post-date {
+            font-size: 12px;
+            color: #999;
+        }
+    </style>
 </head>
 
 <body>
@@ -151,38 +343,37 @@
                             data-toggle="dropdown"></i></a>
                     <ul class="dropdown-menu">
                         <li class="dropdown-submenu nav-item-lv2">
-                            <a class="nav-link" href="muahangamazon.html">Mua hàng trên Amazon <i
-                                    class="fa fa-angle-right"></i></a>
+                            <a class="nav-link" href="#">Mua hàng trên Amazon <i class="fa fa-angle-right"></i></a>
                             <ul class="dropdown-menu">
                                 <li class="nav-item-lv3">
-                                    <a class="nav-link" href="services.html">Dịch vụ</a>
+                                    <a class="nav-link" href="#">Dịch vụ</a>
                                 </li>
                                 <li class="nav-item-lv3">
-                                    <a class="nav-link" href="services.html">Tiện ích</a>
+                                    <a class="nav-link" href="#">Tiện ích</a>
                                 </li>
                             </ul>
                         </li>
                         <li class="dropdown-submenu nav-item-lv2">
-                            <a class="nav-link" href="ebay.html">Mua hàng trên eBay <i
-                                    class="fa fa-angle-right"></i></a>
+                            <a class="nav-link" href="#">Mua hàng trên eBay <i class="fa fa-angle-right"></i></a>
                             <ul class="dropdown-menu">
                                 <li class="nav-item-lv3">
-                                    <a class="nav-link" href="services.html">Dịch vụ</a>
+                                    <a class="nav-link" href="#">Dịch vụ</a>
                                 </li>
                             </ul>
                         </li>
                     </ul>
                 </li>
-                <li class="nav-item"><a class="nav-link" href="news.html">Tin tức</a></li>
+                <li class="nav-item active"><a class="nav-link" href="news.html">Tin tức</a></li>
                 <li class="nav-item"><a class="nav-link" href="contact.html">Liên hệ</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Breadcrumb section -->
     <section class="bread-crumb">
         <div class="container">
             <div class="title-command-wrapper">
-                <h2 class="title" title="Bảo hiểm hàng hóa">Bảo hiểm hàng hóa</h2>
+                <h2 class="title" title="Tin tức">Tin tức</h2>
                 <ul class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
                     <li class="home" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
                         <a itemprop="item" href="index.html" title="Trang chủ">
@@ -192,7 +383,7 @@
                         <span><i class="fa fa-angle-right"></i></span>
                     </li>
                     <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                        <strong itemprop="name">Bảo hiểm hàng hóa</strong>
+                        <strong itemprop="name">Tin tức</strong>
                         <meta itemprop="position" content="2" />
                     </li>
                 </ul>
@@ -200,53 +391,67 @@
         </div>
     </section>
 
-    <section class="page padding-top-40">
+    <section class="blog-page">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12">
-                    
-                    <div class="content-page rte margin-bottom-40 clearfix">
-
-
-                        <div class="service-detail margin-top-30">
-                            <h3>Trách nhiệm của Ant Logistic</h3>
-                            <p>Chính sách về trách nhiệm với các hoạt động giao dịch của Ant Logistic được thực hiện dựa
-                                trên các điều khoản của các website quốc tế và theo luật pháp Việt Nam:</p>
-                            <p>- Bảo đảm quá trình giao dịch của khách hàng và người bán diễn ra an toàn.</p>
-                            <p>- Theo dõi, cập nhật thông tin, tư vấn và hỗ trợ quý khách hàng để hoàn tất các thủ tục
-                                giúp việc giao dịch được thành công.</p>
-                            <p>- Kiểm tra thông tin chất lượng những mặt hàng đăng trên website Ant Logistic đúng như mô
-                                tả của người bán. Các loại hàng hóa đặc biệt và hàng hóa đã qua sử dụng được mua theo
-                                chỉ định của quý khách, Ant Logistic chỉ chịu trách nhiệm đảm bảo thanh toán và vận
-                                chuyển.</p>
-                            <p>- Tư vấn thủ tục giấy tờ, hỗ trợ, thay mặt quý khách khiếu nại, xử lý tranh chấp với
-                                người bán khi quý khách nhận được hàng hóa không đúng như mô tả của người bán.</p>
-                            <p>- Ant Logistic cam kết việc hỗ trợ khách hàng xử lý các tình huống phát sinh trong và sau
-                                quá trình đặt mua hàng và lúc đã nhận hàng theo đúng chính sách của các website quốc tế.
-                            </p>
-                            <p>- Do đặc thù của việc giao dịch quốc tế hiện nay còn tiềm ẩn những bất cập trong quá
-                                trình thực hiện, Ant Logistic luôn cam kết hỗ trợ đứng về phía khách hàng, cung cấp
-                                những cách giải quyết tốt nhất nhằm bảo vệ quyền lợi của quý khách hàng, rất mong quý
-                                khách hàng cùng hợp tác tìm cách giải quyết tốt nhất với những sự cố, rủi ro xảy ra
-                                ngoài ý muốn.</p>
+                <div class="col-md-3 col-sm-12 col-xs-12">
+                    <div class="sidebar">
+                        <div class="sidebar-item">
+                            <div class="sidebar-title">
+                                <h3>DANH MỤC BÀI VIẾT</h3>
+                            </div>
+                            <div class="sidebar-content">
+                                <ul class="list-unstyled">
+                                    <li><a href="index.html">Trang chủ</a></li>
+                                    <li><a href="about.html">Giới thiệu</a></li>
+                                    <li><a href="services.html">Dịch vụ</a></li>
+                                    <li><a href="news.html">Tin tức</a></li>
+                                    <li><a href="contact.html">Liên hệ</a></li>
+                                </ul>
+                            </div>
                         </div>
-
-                        <div class="service-benefits margin-top-30">
-                            <h3>Quyền lợi khi sử dụng dịch vụ bảo hiểm</h3>
-                            <ul>
-                                <li>Bồi thường 100% giá trị hàng hóa trong trường hợp mất mát, hư hỏng</li>
-                                <li>Đảm bảo an toàn tuyệt đối trong quá trình vận chuyển</li>
-                                <li>Thủ tục bồi thường đơn giản, nhanh chóng</li>
-                                <li>Khả năng theo dõi đơn hàng xuyên suốt</li>
-                                <li>Hỗ trợ tư vấn 24/7 từ đội ngũ chăm sóc khách hàng chuyên nghiệp</li>
-                            </ul>
+                        <div class="sidebar-item">
+                            <div class="sidebar-title">
+                                <h3>BÀI VIẾT LIÊN QUAN</h3>
+                            </div>
+                            <div class="sidebar-content">
+                                <div class="related-post-item">
+                                    <img src="../images/ytr.jpg"
+                                        alt="7 tuyệt chiêu tạo ấn tượng tốt khi ship hàng cho khách">
+                                    <div class="related-post-info">
+                                        <h4><a href="#">7 tuyệt chiêu tạo ấn tượng tốt khi ship hàng cho khách</a></h4>
+                                        <span class="post-date">03/03/2018</span>
+                                    </div>
+                                </div>
+                                <div class="related-post-item">
+                                    <img src="../images/mua-hang-tu-my-1418183987.jpg"
+                                        alt="5 lỗi ship hàng phổ biến và cách để hạn chế chúng">
+                                    <div class="related-post-info">
+                                        <h4><a href="#">5 lỗi ship hàng phổ biến và cách để hạn chế chúng</a></h4>
+                                        <span class="post-date">28/02/2018</span>
+                                    </div>
+                                </div>
+                                <div class="related-post-item">
+                                    <img src="../images/hinh-thuc-thanh-toan-1.jpg"
+                                        alt="5 tuyệt chiêu biến ship hàng thành lợi thế cạnh tranh">
+                                    <div class="related-post-info">
+                                        <h4><a href="#">5 tuyệt chiêu biến ship hàng thành lợi thế cạnh tranh</a></h4>
+                                        <span class="post-date">28/02/2018</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
             </div>
+        </div>
+        </div>
+        </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="site-footer">
             <div class="container">
@@ -318,12 +523,11 @@
                     <div class="row">
                         <div class="col-sm-12 text-center">
                             <span>© Bản quyền thuộc về <b>Kiến Vàng</b> <span class="s480-f">|</span> Cung cấp bởi <a
-                                    href="https://www.sapo.vn/?utm_campaign=cpn:kho_theme-plm:footer&utm_source=Tu_nhien&utm_medium=referral&utm_content=fm:text_link-km:-sz:&utm_term=&campaign=kho_theme-sapo"
-                                    title="Sapo" target="_blank" rel="nofollow">Sapo</a></span>
+                                    href="https://www.sapo.vn/" title="Sapo" target="_blank"
+                                    rel="nofollow">Sapo</a></span>
                         </div>
                     </div>
                 </div>
-
                 <div class="btn-wrapper back-to-top">
                     <a href="#top" class="btn btn-transparent"><i class="fa fa-angle-up"></i></a>
                 </div>
@@ -331,120 +535,9 @@
         </div>
     </footer>
 
-    <link rel="preload" as="script" href="../js/api-jquery.js" />
+    <!-- Scripts -->
     <script src="../js/api-jquery.js" type="text/javascript"></script>
-    <link rel="preload" as="script"
-        href="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"
-        type="text/javascript"></script>
-    <script>
-        $.validate({});
-    </script>
-    <link rel="preload" as="script" href="../js/main.js" />
     <script src="../js/main.js" type="text/javascript"></script>
-
-    <div class="backdrop__body-backdrop___1rvky"></div>
-    <div class="c-menu--slide-left">
-        <div class="la-nav-top-login">
-            <div class="la-avatar-nav p-relative text-center">
-                <a href="/account">
-                    <img class="img-responsive" src="../images/av-none-user.png" alt="avatar">
-                </a>
-                <div class="la-hello-user-nav ng-scope">Xin chào</div>
-                <img id="close-nav" class="c-menu__close" src="../images/ic-close-menu.png" alt="close nav">
-            </div>
-            <div class="la-action-link-nav text-center">
-                Chào mừng quý khách đến với Ant Logistic
-            </div>
-        </div>
-        <div class="la-scroll-fix-infor-user">
-            <div class="la-nav-menu-items">
-                <div class="la-title-nav-items">Tất cả danh mục</div>
-                <ul class="la-nav-list-items">
-                    <li class="ng-scope">
-                        <a href="index.html">Trang chủ</a>
-                    </li>
-                    <li class="ng-scope">
-                        <a href="about.html">Giới thiệu</a>
-                    </li>
-                    <li class="ng-scope ng-has-child1">
-                        <a href="services.html">Dịch vụ <i class="fa fa-plus fa1" aria-hidden="true"></i></a>
-                        <ul class="ul-has-child1">
-                            <li class="ng-scope ng-has-child2">
-                                <a href="muahangamazon.html">Mua hàng trên Amazon <i class="fa fa-plus fa2"
-                                        aria-hidden="true"></i></a>
-                                <ul class="ul-has-child2">
-                                    <li class="ng-scope">
-                                        <a href="services.html">Dịch vụ</a>
-                                    </li>
-                                    <li class="ng-scope">
-                                        <a href="services.html">Tiện ích</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="ng-scope ng-has-child2">
-                                <a href="ebay.html">Mua hàng trên eBay <i class="fa fa-plus fa2"
-                                        aria-hidden="true"></i></a>
-                                <ul class="ul-has-child2">
-                                    <li class="ng-scope">
-                                        <a href="services.html">Dịch vụ</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="ng-scope">
-                        <a href="news.html">Tin tức</a>
-                    </li>
-                    <li class="ng-scope">
-                        <a href="contact.html">Liên hệ</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="la-nav-slide-banner">
-                <a href="#">
-                    <img alt="Ant Logistic" src="../images/left-menu-banner-1.png" />
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <style>
-        .service-overview {
-            padding: 30px 0;
-        }
-
-        .service-overview .featured-image {
-            max-width: 120px;
-            margin-bottom: 20px;
-        }
-
-        .service-overview .service-subtitle {
-            color: #db0f30;
-            font-weight: bold;
-            margin-bottom: 15px;
-        }
-
-        .service-detail h3,
-        .service-benefits h3 {
-            color: #333;
-            font-size: 20px;
-            font-weight: 600;
-            margin-bottom: 15px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid #eaeaea;
-        }
-
-        .service-benefits ul {
-            padding-left: 20px;
-        }
-
-        .service-benefits ul li {
-            position: relative;
-            padding: 5px 0;
-            list-style-type: disc;
-        }
-    </style>
 </body>
 
 </html>
