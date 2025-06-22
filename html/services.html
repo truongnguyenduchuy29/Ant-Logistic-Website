@@ -27,12 +27,14 @@
 
     <meta property="og:description" content="">
     <meta property="og:url" content="https://ant-logistic.mysapo.net/dich-vu">
-    <meta property="og:site_name" content="Ant Logistic">
-    <link rel="preload" as="style" type="text/css" href="../css/base.scss.css" onload="this.rel='stylesheet'" />
+    <meta property="og:site_name" content="Ant Logistic">    <link rel="preload" as="style" type="text/css" href="../css/base.scss.css" onload="this.rel='stylesheet'" />
     <link href="../css/base.scss.css" rel="stylesheet" type="text/css" media="all" />
 
     <link rel="preload" as="style" type="text/css" href="../css/ant-logistic.scss.css" onload="this.rel='stylesheet'" />
     <link href="../css/ant-logistic.scss.css" rel="stylesheet" type="text/css" media="all" />
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preload" as="script" href="../js/jquery-2.2.3.min.js" />
     <script src="../js/jquery-2.2.3.min.js" type="text/javascript"></script>
 
@@ -367,29 +369,33 @@
         <nav>
             <ul id="nav" class="nav container">
                 <li class="nav-item"><a class="nav-link" href="index.html">Trang chủ</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">Giới thiệu</a></li>
-                <li class="nav-item active">
+                <li class="nav-item"><a class="nav-link" href="about.html">Giới thiệu</a></li>                <li class="nav-item active">
                     <a href="services.html" class="nav-link">Dịch vụ <i class="fa fa-angle-right"
                             data-toggle="dropdown"></i></a>
                     <ul class="dropdown-menu">
                         <li class="dropdown-submenu nav-item-lv2">
-                            <a class="nav-link" href="#">Mua hàng trên Amazon <i class="fa fa-angle-right"></i></a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item-lv3">
-                                    <a class="nav-link" href="#">Dịch vụ</a>
-                                </li>
-                                <li class="nav-item-lv3">
-                                    <a class="nav-link" href="#">Tiện ích</a>
-                                </li>
-                            </ul>
+                            <a class="nav-link" href="usps.html">Dịch vụ USPS</a>
                         </li>
                         <li class="dropdown-submenu nav-item-lv2">
-                            <a class="nav-link" href="#">Mua hàng trên eBay <i class="fa fa-angle-right"></i></a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item-lv3">
-                                    <a class="nav-link" href="#">Dịch vụ</a>
-                                </li>
-                            </ul>
+                            <a class="nav-link" href="fedex.html">Dịch vụ FedEx</a>
+                        </li>
+                        <li class="dropdown-submenu nav-item-lv2">
+                            <a class="nav-link" href="ups.html">Dịch vụ UPS</a>
+                        </li>
+                        <li class="dropdown-submenu nav-item-lv2">
+                            <a class="nav-link" href="yeuto.html">Yếu tố giá và chất lượng</a>
+                        </li>
+                        <li class="dropdown-submenu nav-item-lv2">
+                            <a class="nav-link" href="chisoquantrong.html">Chỉ số đánh giá hiệu quả</a>
+                        </li>
+                        <li class="dropdown-submenu nav-item-lv2">
+                            <a class="nav-link" href="8-3.html">Kinh doanh dịp 8-3</a>
+                        </li>
+                        <li class="dropdown-submenu nav-item-lv2">
+                            <a class="nav-link" href="canbiet.html">Quản lý đơn hàng</a>
+                        </li>
+                        <li class="dropdown-submenu nav-item-lv2">
+                            <a class="nav-link" href="quanly.html">Mẹo quản lý đơn hàng</a>
                         </li>
                     </ul>
                 </li>
@@ -426,18 +432,17 @@
         <div class="container">
             <div class="row">
                 <!-- Page 1 content -->
-                <div class="page-1-content">
-                    <!-- USPS Service -->
+                <div class="page-1-content">                    <!-- USPS Service -->
                     <article class="blog-item col-md-4 col-sm-6 col-xs-6">
                         <div class="blog-item-hover">
                             <div class="blog-item-thumbnail">
-                                <a href="#">
+                                <a href="usps.html">
                                     <div class="blog-link__featured-image"
                                         style="background-image: url('../images/usps.jpg');"></div>
                                 </a>
                             </div>
                             <h3 class="blog-item-name">
-                                <a href="#">Dịch vụ chuyển phát nhanh USPS</a>
+                                <a href="usps.html">Dịch vụ chuyển phát nhanh USPS</a>
                             </h3>
                             <p class="blog-item-summary">
                                 Dịch vụ chuyển phát nhanh USPS là gói dịch vụ phù hợp cho các cá nhân ho...
@@ -449,13 +454,13 @@
                     <article class="blog-item col-md-4 col-sm-6 col-xs-6">
                         <div class="blog-item-hover">
                             <div class="blog-item-thumbnail">
-                                <a href="#">
+                                <a href="fedex.html">
                                     <div class="blog-link__featured-image"
                                         style="background-image: url('../images/fedex-1.jpg');"></div>
                                 </a>
                             </div>
                             <h3 class="blog-item-name">
-                                <a href="#">Dịch vụ chuyển phát nhanh Fedex</a>
+                                <a href="fedex.html">Dịch vụ chuyển phát nhanh Fedex</a>
                             </h3>
                             <p class="blog-item-summary">
                                 Dịch vụ chuyển phát nhanh Fedex là gói dịch vụ phù hợp cho các cá nhân h...
@@ -467,13 +472,13 @@
                     <article class="blog-item col-md-4 col-sm-6 col-xs-6">
                         <div class="blog-item-hover">
                             <div class="blog-item-thumbnail">
-                                <a href="#">
+                                <a href="ups.html">
                                     <div class="blog-link__featured-image"
                                         style="background-image: url('../images/ups.jpg');"></div>
                                 </a>
                             </div>
                             <h3 class="blog-item-name">
-                                <a href="#">Dịch vụ chuyển phát nhanh UPS</a>
+                                <a href="ups.html">Dịch vụ chuyển phát nhanh UPS</a>
                             </h3>
                             <p class="blog-item-summary">
                                 Dịch vụ chuyển phát nhanh UPS là gói dịch vụ phù hợp cho các cá nhân hoặ...
@@ -481,17 +486,17 @@
                         </div>
                     </article>
 
-                    <!-- Price vs Quality -->
+                    <!-- Price vs Quality - yeuto.html -->
                     <article class="blog-item col-md-4 col-sm-6 col-xs-6">
                         <div class="blog-item-hover">
                             <div class="blog-item-thumbnail">
-                                <a href="#">
+                                <a href="yeuto.html">
                                     <div class="blog-link__featured-image"
                                         style="background-image: url('../images/price-vs-quality.png');"></div>
                                 </a>
                             </div>
                             <h3 class="blog-item-name">
-                                <a href="#">Nếu muốn tăng giá, tuyệt đối không được bỏ ...</a>
+                                <a href="yeuto.html">Nếu muốn tăng giá, tuyệt đối không được bỏ ...</a>
                             </h3>
                             <p class="blog-item-summary">
                                 Các công ty ngành hàng tiêu dùng ở Việt Nam luôn tìm kiếm cơ hội tăng trưởng....
@@ -499,18 +504,18 @@
                         </div>
                     </article>
 
-                    <!-- Frozen Food -->
+                    <!-- Frozen Food - chisoquantrong.html -->
                     <article class="blog-item col-md-4 col-sm-6 col-xs-6">
                         <div class="blog-item-hover">
                             <div class="blog-item-thumbnail">
-                                <a href="#">
+                                <a href="chisoquantrong.html">
                                     <div class="blog-link__featured-image"
                                         style="background-image: url('../images/frozen-food-supermarket-st-1.jpg');">
                                     </div>
                                 </a>
                             </div>
                             <h3 class="blog-item-name">
-                                <a href="#">Các chỉ số quan trọng để đánh giá hiệu quả củ...</a>
+                                <a href="chisoquantrong.html">Các chỉ số quan trọng để đánh giá hiệu quả củ...</a>
                             </h3>
                             <p class="blog-item-summary">
                                 Đối với chủ shop thì việc đánh giá hiệu quả của các cửa hàng bán lẻ là đặc bi...
@@ -518,17 +523,17 @@
                         </div>
                     </article>
 
-                    <!-- Business -->
+                    <!-- Business - 8-3.html -->
                     <article class="blog-item col-md-4 col-sm-6 col-xs-6">
                         <div class="blog-item-hover">
                             <div class="blog-item-thumbnail">
-                                <a href="#">
+                                <a href="8-3.html">
                                     <div class="blog-link__featured-image"
                                         style="background-image: url('../images/business.jpg');"></div>
                                 </a>
                             </div>
                             <h3 class="blog-item-name">
-                                <a href="#">Kiếm thêm thu nhập trong dịp 8-3 với 5 ý tưởn...</a>
+                                <a href="8-3.html">Kiếm thêm thu nhập trong dịp 8-3 với 5 ý tưởn...</a>
                             </h3>
                             <p class="blog-item-summary">
                                 Ngày Quốc tế phụ nữ 8-3 đang đến gần, bạn đã có ý tưởng kinh doanh gì để kiếm...
@@ -538,35 +543,34 @@
                 </div>
 
                 <!-- Page 2 content -->
-                <div class="page-2-content" style="display: none;">
-                    <!-- Order Management -->
+                <div class="page-2-content" style="display: none;">                    <!-- Order Management - canbiet.html -->
                     <article class="blog-item col-md-4 col-sm-6 col-xs-6">
                         <div class="blog-item-hover">
                             <div class="blog-item-thumbnail">
-                                <a href="#">
+                                <a href="canbiet.html">
                                     <div class="blog-link__featured-image"
                                         style="background-image: url('../images/shipment-orders.jpg');"></div>
                                 </a>
                             </div>
                             <h3 class="blog-item-name">
-                                <a href="#">Quản lý đơn hàng hiệu quả</a>
+                                <a href="canbiet.html">Quản lý đơn hàng hiệu quả</a>
                             </h3>
                             <p class="blog-item-summary">
                                 Hướng dẫn chi tiết cách quản lý đơn hàng hiệu quả cho chủ shop online...
                             </p>
                         </div>
                     </article>
-                    <!-- Order Management Tips -->
+                    <!-- Order Management Tips - quanly.html -->
                     <article class="blog-item col-md-4 col-sm-6 col-xs-6">
                         <div class="blog-item-hover">
                             <div class="blog-item-thumbnail">
-                                <a href="#">
+                                <a href="quanly.html">
                                     <div class="blog-link__featured-image"
                                         style="background-image: url('../images/pizza-order-online.jpg');"></div>
                                 </a>
                             </div>
                             <h3 class="blog-item-name">
-                                <a href="#">Việc quản lý đơn hàng sẽ đơn giản hơn với 3 ...</a>
+                                <a href="quanly.html">Việc quản lý đơn hàng sẽ đơn giản hơn với 3 ...</a>
                             </h3>
                             <p class="blog-item-summary">
                                 Công đoạn quản lý đơn hàng luôn là khâu khiến chủ kinh doanh đau đầu nhất tro...
@@ -681,11 +685,14 @@
 
     <!-- Scripts -->
     <script src="../js/api-jquery.js" type="text/javascript"></script>
-    <script src="../js/main.js" type="text/javascript"></script>
-
-    <!-- Add pagination JavaScript before closing body tag -->
+    <script src="../js/main.js" type="text/javascript"></script>    <!-- Add pagination JavaScript before closing body tag -->
     <script>
         $(document).ready(function () {
+            // Initialize - show page 1, hide page 2
+            $('.page-1-content').show();
+            $('.page-2-content').hide();
+            $('.pagination .page-link[data-page="prev"]').parent().addClass('disabled');
+            
             // Handle pagination clicks
             $('.pagination .page-link').click(function (e) {
                 e.preventDefault();
@@ -723,9 +730,6 @@
                     scrollTop: $('.page-services').offset().top - 100
                 }, 500);
             });
-
-            // Initialize page 1
-            $('.pagination .page-link[data-page="1"]').click();
         });
     </script>
 </body>
