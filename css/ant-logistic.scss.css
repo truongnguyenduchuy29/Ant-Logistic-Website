@@ -6,9 +6,9 @@ textarea.form-control,
 select.form-control {
     border-radius: 10px;
     outline: none;
-    box-shadow: none;
-    -webkit-appearance: none;
+    box-shadow: none;    -webkit-appearance: none;
     -moz-appearance: none;
+    appearance: none;
     border: 1px solid #e1e1e1
 }
 
@@ -1609,11 +1609,11 @@ header nav #nav .mega-content .level0 .level1 .level1 a:focus {
     line-height: 30px;
     border-radius: 3px;
     text-align: center;
-    opacity: 0;
-    -webkit-transform: translate(-50px, 0px);
+    opacity: 0;    -webkit-transform: translate(-50px, 0px);
     -moz-transform: translate(-50px, 0px);
     -ms-transform: translate(-50px, 0px);
     -o-transform: translate(-50px, 0px);
+    transform: translate(-50px, 0px);
     -webkit-transition: all 300ms ease-in-out;
     -moz-transition: all 300ms ease-in-out;
     -ms-transition: all 300ms ease-in-out;
@@ -1726,11 +1726,11 @@ header nav #nav .mega-content .level0 .level1 .level1 a:focus {
     border-radius: 3px
 }
 
-.products-view-grid .product-box:hover .product-thumbnail .button-link .btn_df {
-    -webkit-transform: translate(0px, 0px);
+.products-view-grid .product-box:hover .product-thumbnail .button-link .btn_df {    -webkit-transform: translate(0px, 0px);
     -moz-transform: translate(0px, 0px);
     -ms-transform: translate(0px, 0px);
     -o-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
     opacity: 1
 }
 
@@ -2148,10 +2148,10 @@ header nav #nav .mega-content .level0 .level1 .level1 a:focus {
     color: #db0f30
 }
 
-.right_module .module_service_details .wrap_module_service .item_service:hover .wrap_item_ .image_service {
-    -webkit-transform: rotate(360deg);
+.right_module .module_service_details .wrap_module_service .item_service:hover .wrap_item_ .image_service {    -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg)
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg)
 }
 
 .right_module .module_service_details .wrap_module_service .item_service:last-child {
@@ -2322,9 +2322,9 @@ header nav #nav .mega-content .level0 .level1 .level1 a:focus {
 .bizweb-product-reviews-form select.form-control {
     border-radius: 0px;
     outline: none;
-    box-shadow: none !important;
-    -webkit-appearance: none !important;
-    -moz-appearance: none !important
+    box-shadow: none !important;    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important
 }
 
 .bizweb-product-reviews-form .bpr-form-actions .bpr-button-submit {
@@ -2424,8 +2424,7 @@ header nav #nav .mega-content .level0 .level1 .level1 a:focus {
 }
 
 .details-pro .form-product .form-group .custom-btn-number {
-    width: 150px;
-    display: inline-block;
+    width: 150px;    display: block;
     float: left;
     position: relative;
     padding: 0;
@@ -2460,8 +2459,7 @@ header nav #nav .mega-content .level0 .level1 .level1 a:focus {
 .details-pro .form-product .form-group .custom-btn-number button {
     font-size: 20px;
     line-height: 0px;
-    border: solid 1px #ebebeb;
-    display: inline-block;
+    border: solid 1px #ebebeb;    display: block;
     width: 40px;
     height: 40px;
     background: #fff;
@@ -2543,8 +2541,7 @@ header nav #nav .mega-content .level0 .level1 .level1 a:focus {
 }
 
 .product-tab .tabs-title .tab-link {
-    position: relative;
-    display: inline-block;
+    position: relative;    display: block;
     padding: 0px 25px;
     border-bottom: 0px;
     cursor: pointer;
@@ -2929,15 +2926,14 @@ header nav #nav .mega-content .level0 .level1 .level1 a:focus {
 }
 
 .shopping-cart-item .col-right .quantity-block .input-group-btn button:focus,
-.shopping-cart-item .col-right .quantity-block .input-group-btn button:hover {
-    outline: none;
+.shopping-cart-item .col-right .quantity-block .input-group-btn button:hover {    outline: none;
     box-shadow: none;
     -webkit-appearance: none;
-    -moz-appearance: none
+    -moz-appearance: none;
+    appearance: none
 }
 
-.shopping-cart-item .col-right .quantity-block .input-group-btn .js-quantity-product {
-    display: inline-block;
+.shopping-cart-item .col-right .quantity-block .input-group-btn .js-quantity-product {    display: block;
     height: 28px;
     padding: 0 5px;
     text-align: center;
@@ -4620,9 +4616,9 @@ header nav #nav .mega-content .level0 .level1 .level1 a:focus {
     color: #2c3e50;
     overflow: visible;
     white-space: normal;
-    flex-grow: 1;
-    display: -webkit-box;
+    flex-grow: 1;    display: -webkit-box;
     -webkit-line-clamp: 2;
+    line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
     min-height: 70px;
@@ -4644,9 +4640,9 @@ header nav #nav .mega-content .level0 .level1 .level1 a:focus {
     font-size: 14px;
     line-height: 1.6;
     border: none;
-    margin: 0;
-    display: -webkit-box;
+    margin: 0;    display: -webkit-box;
     -webkit-line-clamp: 3;
+    line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-align: justify;
