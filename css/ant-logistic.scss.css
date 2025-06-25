@@ -2386,11 +2386,6 @@ header nav #nav .mega-content .level0 .level1 .level1 a:focus {
     color: #f0ca6c !important
 }
 
-.details-pro .panel-product-rating .bizweb-product-reviews-badge div:nth-child(2),
-.details-pro .panel-product-rating .bizweb-product-reviews-badge div:nth-child(3) {
-    display: none
-}
-
 .details-pro .inventory_quantity .a-stock {
     color: #db0f30
 }
@@ -2984,16 +2979,6 @@ header nav #nav .mega-content .level0 .level1 .level1 a:focus {
     margin: 0;
     text-align: right;
     line-height: 1.1
-}
-
-#right-affix .each-row .box-style.fee .total2 .amount p strong {
-    color: #db0f30;
-    font-size: 22px;
-    font-weight: 700
-}
-
-#right-affix .each-row .box-style.fee .total2 .amount p small {
-    font-weight: 500
 }
 
 #right-affix .each-row .box-style+.box-style {
@@ -3633,31 +3618,17 @@ header nav #nav .mega-content .level0 .level1 .level1 a:focus {
 
 .related-product .owl-nav .owl-next:before,
 .related-product .owl-nav .owl-prev:before {
+    background-color: #db0f30;
+    border: 1px solid #db0f30;
+    border-radius: 5px;
+    height: 50px;
     width: 30px;
-    height: 30px;
-    text-align: center;
-    line-height: 26px;
-    background: transparent;
-    font-size: 16px
-}
-
-.related-product .owl-nav .owl-next:hover,
-.related-product .owl-nav .owl-prev:hover {
-    border-color: #db0f30
-}
-
-.related-product .owl-nav .owl-next:hover:before,
-.related-product .owl-nav .owl-prev:hover:before {
-    color: #db0f30
-}
-
-.related-product .owl-nav .owl-next {
-    position: absolute;
-    right: 0px
+    line-height: 50px;
+    color: #fff;
+    font-size: 30px
 }
 
 .related-product .owl-nav .owl-prev {
-    position: absolute;
     right: 35px;
     left: auto
 }
@@ -4648,133 +4619,72 @@ header nav #nav .mega-content .level0 .level1 .level1 a:focus {
     text-align: justify;
 }
 
-/* Enhanced button styling */
-.margin-top-30 {
-    margin-top: 40px !important;
-}
-
-.btn-primary.btn-lg {
-    background: linear-gradient(135deg, #db0f30, #ff1744);
-    border: none;
-    border-radius: 50px;
-    padding: 15px 40px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    transition: all 0.3s ease;
-    box-shadow: 0 6px 20px rgba(219, 15, 48, 0.3);
-    font-size: 16px;
-    position: relative;
-    overflow: hidden;
-}
-
-.btn-primary.btn-lg::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-    transition: left 0.5s;
-}
-
-.btn-primary.btn-lg:hover::before {
-    left: 100%;
-}
-
-.btn-primary.btn-lg:hover {
-    background: linear-gradient(135deg, #ff1744, #db0f30);
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(219, 15, 48, 0.4);
-}
-
-/* Responsive adjustments for 3 columns */
-@media (max-width: 1199px) {
-    .news-grid .blog-item .blog-item-thumbnail img {
-        height: 200px;
-    }
-    
-    .news-grid .blog-item .blog-item-name {
-        font-size: 16px;
-        min-height: 65px;
-    }
-    
-    .news-grid .blog-item {
-        max-width: 300px;
-    }
-}
-
-@media (max-width: 991px) {
-    .news-item-col {
-        margin-bottom: 25px;
-    }
-    
-    .news-grid .blog-item .blog-item-thumbnail img {
-        height: 180px;
-    }
-    
-    .news-grid .blog-item .blog-item-name {
-        font-size: 15px;
-        min-height: 60px;
-    }
-    
-    .news-grid .blog-item {
-        max-width: 280px;
-    }
-}
-
-@media (max-width: 767px) {
-    .news-item-col {
-        margin-bottom: 20px;
-        max-width: 350px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    .news-grid .blog-item .blog-item-thumbnail img {
-        height: 160px;
-    }
-    
-    .news-grid .blog-item .blog-item-name {
-        font-size: 15px;
-        padding: 15px 15px 8px;
-        min-height: 50px;
-    }
-    
-    .news-grid .blog-item .blog-item-summary {
-        padding: 0 15px 20px;
-        font-size: 13px;
-    }
-    
-    .news-grid .blog-item .blog-item-thumbnail .articles-date {
-        top: 10px;
-        left: 10px;
-        padding: 8px 12px;
-        font-size: 11px;
-        min-width: 50px;
-    }
-    
-    .news-grid .blog-item .blog-item-thumbnail .articles-date span {
-        font-size: 16px;
-    }
-
-    .btn-primary.btn-lg {
-        padding: 12px 30px;
-        font-size: 14px;
-    }
-    
-    .news-grid .blog-item {
-        max-width: 100%;
-    }
-}
-
+/* Mobile optimization utilities */
 @media (max-width: 575px) {
-    .news-grid .row {
-        margin: 0 -10px;
+    .section-news .container {
+        padding-left: 15px;
+        padding-right: 15px;
     }
     
-    .news-item-col {
-        padding: 0 10px;
+    .section-news .service-title {
+        margin-bottom: 15px;
+    }
+    
+    .section-news .service-title h2 {
+        font-size: 18px;
+        line-height: 1.2;
+        margin-bottom: 8px;
+    }
+    
+    .section-news .service-title .service-subtitle {
+        font-size: 12px;
+        letter-spacing: 0.5px;
+    }
+    
+    /* Single column layout for very small screens */
+    .section-news .news-item-col {
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+    
+    .section-news .blog-item {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        overflow: hidden;
+        margin-bottom: 15px;
+    }
+    
+    .section-news .blog-item .blog-item-name,
+    .section-news .blog-item .blog-item-summary {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .section-news .blog-item .blog-item-summary {
+        padding-bottom: 15px;
+        border: none;
+    }
+}
+
+/* Improve touch interaction */
+@media (max-width: 767px) {
+    .section-news .blog-item .blog-item-name a {
+        text-decoration: none;
+        color: #333;
+        transition: color 0.3s ease;
+    }
+    
+    .section-news .blog-item .blog-item-name a:hover,
+    .section-news .blog-item .blog-item-name a:active {
+        color: #db0f30;
+    }
+    
+    /* Better date badge positioning */
+    .section-news .blog-item .blog-item-thumbnail .articles-date {
+        top: 8px;
+        left: 8px;
+        z-index: 2;
     }
 }
